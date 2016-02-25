@@ -272,7 +272,8 @@ in `dotspacemacs/user-config'."
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
-  (setq pyim-directory "~/.spacemacs.d/pyim")
+  (setq pyim-directory "~/.spacemacs.d/pyim/")
+  (setq pyim-dicts '((:name "default" :file "~/.spacemacs.d/pyim/dicts/pyim-bigdict.pyim" :coding utf-8-unix :dict-type pinyin-dict)))
   (global-evil-matchit-mode 1)
   (add-to-list 'load-path (expand-file-name "lisp" "~/.spacemacs.d/"))
   (require 'init-linum)
