@@ -275,6 +275,7 @@ layers configuration. You are free to put any user code."
   (setq pyim-directory "~/.spacemacs.d/pyim")
   (add-to-list 'load-path (expand-file-name "lisp" "~/.spacemacs.d/"))
   (require 'init-linum)
+  (require 'init-org)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
