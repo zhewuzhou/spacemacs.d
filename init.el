@@ -279,6 +279,7 @@ layers configuration. You are free to put any user code."
   (require 'init-linum)
   (require 'init-org)
   (require 'init-global-keybinds)
+  (require 'init-project)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
