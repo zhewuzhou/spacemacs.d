@@ -67,7 +67,7 @@ values."
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages '()
    ;; A list of packages and/or extensions that will not be install and loaded.
-   dotspacemacs-excluded-packages '()
+   dotspacemacs-excluded-packages '(linum-relative)
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
    ;; are declared in a layer which is not a member of
    ;; the list `dotspacemacs-configuration-layers'. (default t)
@@ -273,6 +273,8 @@ in `dotspacemacs/user-config'."
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
   (setq pyim-directory "~/.spacemacs.d/pyim")
+  (add-to-list 'load-path (expand-file-name "lisp" "~/.spacemacs.d/"))
+  (require 'init-linum)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
