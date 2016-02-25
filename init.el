@@ -273,6 +273,7 @@ in `dotspacemacs/user-config'."
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
   (setq pyim-directory "~/.spacemacs.d/pyim")
+  (global-evil-matchit-mode 1)
   (add-to-list 'load-path (expand-file-name "lisp" "~/.spacemacs.d/"))
   (require 'init-linum)
   (require 'init-org)
