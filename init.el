@@ -30,7 +30,11 @@ values."
      search-engine
      ;; ----------------------------------------------------------------
      ;; common editing support
-     auto-completion
+     (auto-completion :variables
+                      auto-completion-enable-snippets-in-popup t
+                      auto-completion-enable-sort-by-usage t
+                      auto-completion-enable-help-tooltip t
+                      auto-completion-private-snippets-directory '("~/.spacemacs.d/snippets"))
      spell-checking
      syntax-checking
      better-defaults
