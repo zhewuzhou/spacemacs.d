@@ -33,8 +33,7 @@ values."
      (auto-completion :variables
                       auto-completion-enable-snippets-in-popup t
                       auto-completion-enable-sort-by-usage t
-                      auto-completion-enable-help-tooltip t
-                      auto-completion-private-snippets-directory '("~/.spacemacs.d/snippets"))
+                      auto-completion-enable-help-tooltip t)
      spell-checking
      syntax-checking
      better-defaults
@@ -278,7 +277,10 @@ This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
   (setq pyim-directory "~/.spacemacs.d/pyim/")
   (setq pyim-dicts '((:name "default" :file "~/.spacemacs.d/pyim/dicts/pyim-bigdict.pyim" :coding utf-8-unix :dict-type pinyin-dict)))
+
   (global-evil-matchit-mode 1)
+  (global-linum-mode 1)
+
   (add-to-list 'load-path (expand-file-name "lisp" "~/.spacemacs.d/"))
   (require 'init-linum)
   (require 'init-org)

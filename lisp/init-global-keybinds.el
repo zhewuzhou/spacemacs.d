@@ -15,6 +15,8 @@
   "ds" 'delete-trailing-whitespace
   "Z"  'current-term)
 
+(define-key evil-insert-state-map (kbd "C-y") 'helm-yas-complete)
+
 (defun find-term-buffer ()
   (interactive)
   (car (-filter (lambda (b)
