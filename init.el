@@ -45,6 +45,7 @@ values."
      common-lisp
      ;; ----------------------------------------------------------------
      ;;; main langs
+     csharp
      swift
      scala
      python
