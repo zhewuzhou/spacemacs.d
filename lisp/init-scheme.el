@@ -1,12 +1,16 @@
 ;;; init-scheme.el start here
+(require 'init-window)
+(require 'xscheme)
 
-(spacemacs|defvar-company-backends scheme-mode)
-(push '(company-files
-         company-dabbrev
-         geiser-company-backend) company-backends-scheme-mode)
-
-
-(spacemacs|add-company-hook scheme-mode)
+(evil-leader/set-key-for-mode 'scheme-mode
+  "eb" '(lambda ()
+         (interactive)
+         (if (get-buffer "*scheme*")
+             (kill-buffer "*scheme*"))
+         (split-window-horizontally-instead)
+         (run-scheme "scheme")
+         (switch-window)
+         (xscheme-send-buffer)))
 
 (provide 'init-scheme)
 
