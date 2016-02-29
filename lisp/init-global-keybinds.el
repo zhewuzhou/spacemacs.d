@@ -1,17 +1,16 @@
 ;;; init-global-keybinds.el start here
 (evil-leader/set-key
   ;;; don't use o, because it's the namespace of org
+  ;;; making sure always using 2 chars single chars make it less flexable
   "aa" 'avy-goto-char-2
   "aA" 'helm-apropos
-  "W"  'ispell-word
+  "cw"  'ispell-word
   "dw" 'delete-other-windows
   "db" 'delete-all-other-buffers
   "fm" 'indent-region
   "pF" 'helm-projectile-find-file-in-known-projects
-  "m"  'markdown-preview
   "nt" 'neotree-toggle
   ;;; o is for org mode
-  "Q"  'save-buffers-kill-terminal
   "ds" 'delete-trailing-whitespace
   "Z"  'current-term)
 
