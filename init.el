@@ -45,6 +45,7 @@ values."
      ;;; lang lisp family
      emacs-lisp
      haskell
+     scheme
      clojure
      common-lisp
      ;; ----------------------------------------------------------------
@@ -163,7 +164,7 @@ values."
    dotspacemacs-emacs-leader-key "M-m"
    ;; Major mode leader key is a shortcut key which is the equivalent of
    ;; pressing `<leader> m`. Set it to `nil` to disable it. (default ",")
-   dotspacemacs-major-mode-leader-key ","
+   dotspacemacs-major-mode-leader-key "SPC"
    ;; Major mode leader key accessible in `emacs state' and `insert state'.
    ;; (default "C-M-m)
    dotspacemacs-major-mode-emacs-leader-key "C-M-m"
@@ -307,7 +308,6 @@ layers configuration. You are free to put any user code."
   (require 'init-org)
   (require 'init-global-keybinds)
   (require 'init-project)
-  (require 'init-scheme)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
