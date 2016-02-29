@@ -28,6 +28,8 @@ values."
      gtags
      semantic
      search-engine
+     (ranger :variables
+             ranger-show-preview t)
      ;; ----------------------------------------------------------------
      ;; common editing support
      (auto-completion :variables
@@ -45,6 +47,7 @@ values."
      common-lisp
      ;; ----------------------------------------------------------------
      ;;; main langs
+     java
      csharp
      swift
      scala
@@ -54,12 +57,14 @@ values."
      typescript
      javascript
      shell-scripts
+     windows-scripts
      sql
      html
      c-c++
      ;; ----------------------------------------------------------------
      ;;; misc langs
-     ess
+     (ess :variables
+          ess-enable-smart-equals t)
      yaml
      markdown
      org
@@ -277,11 +282,17 @@ This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
   (setq pyim-directory "~/.spacemacs.d/pyim/")
   (setq pyim-dicts '((:name "default" :file "~/.spacemacs.d/pyim/dicts/pyim-bigdict.pyim" :coding utf-8-unix :dict-type pinyin-dict)))
+  (setq eclim-eclipse-dirs "~/Applications/Eclipse.app/Contents/Eclipse"
+        eclim-executable "~/Applications/Eclipse.app/Contents/Eclipse/eclim")
 
   (global-evil-matchit-mode 1)
   (global-linum-mode 1)
 
   (add-to-list 'load-path (expand-file-name "lisp" "~/.spacemacs.d/"))
+
+  (add-hook 'ess-mode-hook (lambda ()
+                             (ess-toggle-underscore nil)))
+
   (require 'init-linum)
   (require 'init-org)
   (require 'init-global-keybinds)
