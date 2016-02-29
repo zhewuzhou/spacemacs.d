@@ -28,6 +28,7 @@ values."
      gtags
      semantic
      search-engine
+     (ibuffer :variables ibuffer-group-buffers-by 'projects)
      (ranger :variables
              ranger-show-preview t)
      ;; ----------------------------------------------------------------
