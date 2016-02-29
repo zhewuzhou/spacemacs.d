@@ -27,6 +27,7 @@ values."
      chinese
      gtags
      semantic
+     restclient
      search-engine
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
      (ranger :variables
