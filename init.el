@@ -55,6 +55,7 @@ values."
      ruby
      go
      typescript
+     react
      javascript
      shell-scripts
      windows-scripts
@@ -68,6 +69,13 @@ values."
      yaml
      markdown
      org
+     ;; ----------------------------------------------------------------
+     ;;; config langs
+     ansible
+     dockerfile
+     puppet
+     salt
+     terraform
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
