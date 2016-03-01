@@ -52,11 +52,13 @@ values."
      ;;; main langs
      java
      csharp
+     c-c++
      swift
      scala
      python
      ruby
      go
+     erlang
      typescript
      react
      javascript
@@ -64,7 +66,6 @@ values."
      windows-scripts
      sql
      html
-     c-c++
      ;; ----------------------------------------------------------------
      ;;; misc langs
      (ess :variables
