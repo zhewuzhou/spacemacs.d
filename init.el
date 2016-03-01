@@ -45,7 +45,7 @@ values."
      ;;; lang lisp family
      emacs-lisp
      haskell
-     scheme
+     racket
      clojure
      common-lisp
      ;; ----------------------------------------------------------------
@@ -309,7 +309,6 @@ layers configuration. You are free to put any user code."
   (require 'init-org)
   (require 'init-global-keybinds)
   (require 'init-project)
-  (require 'init-scheme)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
