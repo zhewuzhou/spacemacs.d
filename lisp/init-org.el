@@ -8,21 +8,6 @@
   (interactive)
   (org-map-entries 'org-archive-subtree "/DONE" 'file))
 
-(evil-leader/set-key-for-mode 'org-mode
-  "oa"  'org-agenda
-  "oA"  'my/org-archive-done-tasks
-  "oc"  'org-capture
-  "od"  'org-deadline
-  "on"  'org-narrow-to-subtree
-  "oi"  '(lambda ()
-           (interactive)
-           (org-insert-property-drawer))
-  "oo"  'org-open-at-point
-  "ol"  'org-insert-link
-  "op"  'org-pomodoro
-  "os"  'org-set-tags-command
-  "ot"  'org-todo
-  "o$"  'org-archive-subtree)
 
 (add-hook 'org-capture-mode-hook
           (lambda ()
@@ -34,6 +19,20 @@
             (define-key org-mode-map (kbd "C-\\") 'org-insert-heading)
             (define-key org-mode-map (kbd "C-c l") 'org-metaleft)
             (define-key org-mode-map (kbd "C-c r") 'org-metaright)
+            (define-key org-mode-map (kbd ",oa")  'org-agenda)
+            (define-key org-mode-map (kbd ",oA")  'my/org-archive-done-tasks)
+            (define-key org-mode-map (kbd ",oc")  'org-capture)
+            (define-key org-mode-map (kbd ",od")  'org-deadline)
+            (define-key org-mode-map (kbd ",on")  'org-narrow-to-subtree)
+            (define-key org-mode-map (kbd ",oi")  '(lambda ()
+                                                     (interactive)
+                                                     (org-insert-property-drawer)))
+            (define-key org-mode-map (kbd ",oo")  'org-open-at-point)
+            (define-key org-mode-map (kbd ",ol")  'org-insert-link)
+            (define-key org-mode-map (kbd ",op")  'org-pomodoro)
+            (define-key org-mode-map (kbd ",os")  'org-set-tags-command)
+            (define-key org-mode-map (kbd ",ot")  'org-todo)
+            (define-key org-mode-map (kbd ",o$")  'org-archive-subtree)
             (evil-define-key 'normal org-mode-map (kbd "TAB") 'org-cycle)
             (auto-fill-mode)
             (flyspell-mode)))
