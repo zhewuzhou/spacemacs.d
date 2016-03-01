@@ -15,6 +15,8 @@
   "Z"  'current-term)
 
 (define-key evil-insert-state-map (kbd "C-y") 'helm-yas-complete)
+(define-key evil-normal-state-map (kbd "C-f") 'evil-jump-forward)
+(define-key evil-insert-state-map (kbd "C-f") 'evil-jump-forward)
 
 (defun find-term-buffer ()
   (interactive)
