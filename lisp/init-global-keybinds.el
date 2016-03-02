@@ -4,11 +4,12 @@
   ;;; making sure always using 2 chars single chars make it less flexable
   "aa" 'avy-goto-char-2
   "aA" 'helm-apropos
-  "cw"  'ispell-word
+  "cw" 'ispell-word
   "dw" 'delete-other-windows
   "db" 'delete-all-other-buffers
   "fm" 'indent-region
   "pF" 'helm-projectile-find-file-in-known-projects
+  "ps" 'spacemacs/helm-project-smart-do-search
   "nt" 'neotree-toggle
   ;;; o is for org mode
   "ds" 'delete-trailing-whitespace
