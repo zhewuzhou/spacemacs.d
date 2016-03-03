@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: case
+# key: case
+# --
+(test-case
+    "${1:case}"
+  (check-eq? 1 1 "example case"))
