@@ -296,6 +296,7 @@ layers configuration. You are free to put any user code."
   (setq pyim-dicts '((:name "default" :file "~/.spacemacs.d/pyim/dicts/pyim-bigdict.pyim" :coding utf-8-unix :dict-type pinyin-dict)))
   (setq eclim-eclipse-dirs "~/Applications/Eclipse.app/Contents/Eclipse"
         eclim-executable "~/Applications/Eclipse.app/Contents/Eclipse/eclim")
+  (setq markdown-command "~/.rvm/gems/ruby-2.2.2/bin/kramdown")
 
   (global-evil-matchit-mode 1)
   (global-evil-surround-mode 1)
