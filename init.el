@@ -296,6 +296,8 @@ layers configuration. You are free to put any user code."
   (setq eclim-eclipse-dirs "~/Applications/Eclipse.app/Contents/Eclipse"
         eclim-executable "~/Applications/Eclipse.app/Contents/Eclipse/eclim")
   (setq markdown-command "~/.rvm/gems/ruby-2.2.2/bin/kramdown")
+  (setq google-translate-default-source-language "en")
+  (setq google-translate-default-target-language "zh")
 
   (global-evil-matchit-mode 1)
   (global-evil-surround-mode 1)
