@@ -309,6 +309,14 @@ layers configuration. You are free to put any user code."
   (spacemacs/set-leader-keys-for-major-mode 'racket-mode
                                             "tr" 'racket-raco-test)
 
+  (spacemacs|defvar-company-backends racket-mode)
+  (push '(company-files
+          company-dabbrev
+          company-capf) company-backends-racket-mode)
+  
+  
+  (spacemacs|add-company-hook racket-mode)
+
   (require 'init-linum)
   (require 'init-org)
   (require 'init-global-keybinds)
