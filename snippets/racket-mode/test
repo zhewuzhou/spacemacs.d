@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: test
+# key: test
+# --
+#lang racket/base
+
+(module+ test
+  (require rackunit)
+  (check-eq? 1 1 "Hello World!"))
