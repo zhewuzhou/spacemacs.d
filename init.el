@@ -306,21 +306,11 @@ layers configuration. You are free to put any user code."
   (add-hook 'ess-mode-hook (lambda ()
                              (ess-toggle-underscore nil)))
 
-  (spacemacs/set-leader-keys-for-major-mode 'racket-mode
-                                            "tr" 'racket-raco-test)
-
-  (spacemacs|defvar-company-backends racket-mode)
-  (push '(company-files
-          company-dabbrev
-          company-capf) company-backends-racket-mode)
-  
-  
-  (spacemacs|add-company-hook racket-mode)
-
   (require 'init-linum)
   (require 'init-org)
   (require 'init-global-keybinds)
   (require 'init-project)
+  (require 'init-racket)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
