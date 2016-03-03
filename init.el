@@ -21,7 +21,6 @@ values."
      ;; ----------------------------------------------------------------
      ;; common tools
      osx
-     chrome
      shell
      git
      chinese
