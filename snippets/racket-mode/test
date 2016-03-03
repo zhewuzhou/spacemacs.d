@@ -6,4 +6,6 @@
 
 (module+ test
   (require rackunit)
-  (check-eq? 1 1 "Hello World!"))
+  (test-case
+      "${1:case}"
+    (check-eq? 1 1 "example case"))
