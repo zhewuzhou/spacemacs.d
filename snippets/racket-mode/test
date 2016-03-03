@@ -8,4 +8,4 @@
   (require rackunit)
   (test-case
       "${1:case}"
-    (check-eq? 1 1 "example case"))
+    (check-eq? 1 1 "example case")))
