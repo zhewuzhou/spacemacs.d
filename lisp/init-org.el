@@ -13,27 +13,11 @@
           (lambda ()
             (evil-insert-state)))
 
+(spacemacs/set-leader-keys-for-major-mode 'org-mode
+  "A" 'my/org-archive-done-tasks)
+
 (add-hook 'org-mode-hook
           (lambda ()
-            (define-key org-mode-map (kbd "C-c ,") 'org-time-stamp-inactive)
-            (define-key org-mode-map (kbd "C-\\") 'org-insert-heading)
-            (define-key org-mode-map (kbd "C-c l") 'org-metaleft)
-            (define-key org-mode-map (kbd "C-c r") 'org-metaright)
-            (define-key org-mode-map (kbd ",oa")  'org-agenda)
-            (define-key org-mode-map (kbd ",oA")  'my/org-archive-done-tasks)
-            (define-key org-mode-map (kbd ",oc")  'org-capture)
-            (define-key org-mode-map (kbd ",od")  'org-deadline)
-            (define-key org-mode-map (kbd ",on")  'org-narrow-to-subtree)
-            (define-key org-mode-map (kbd ",oi")  '(lambda ()
-                                                     (interactive)
-                                                     (org-insert-property-drawer)))
-            (define-key org-mode-map (kbd ",oo")  'org-open-at-point)
-            (define-key org-mode-map (kbd ",ol")  'org-insert-link)
-            (define-key org-mode-map (kbd ",op")  'org-pomodoro)
-            (define-key org-mode-map (kbd ",os")  'org-set-tags-command)
-            (define-key org-mode-map (kbd ",ot")  'org-todo)
-            (define-key org-mode-map (kbd ",o$")  'org-archive-subtree)
-            (evil-define-key 'normal org-mode-map (kbd "TAB") 'org-cycle)
             (auto-fill-mode)
             (flyspell-mode)))
 
