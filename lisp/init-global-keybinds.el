@@ -5,6 +5,7 @@
   ",c" 'avy-goto-char-2
   ",w" 'avy-goto-word-or-subword-1
   ",g" 'google-translate-at-point
+  ",t" 'google-translate-query-translate-reverse
   "aA" 'helm-apropos
   "cw" 'ispell-word
   "dw" 'delete-other-windows
