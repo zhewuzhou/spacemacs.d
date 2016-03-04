@@ -8,7 +8,7 @@
   ",t" 'google-translate-query-translate-reverse
   "aA" 'helm-apropos
   "cw" 'ispell-word
-  "dw" 'delete-other-windows
+  "wD" 'delete-other-windows
   "db" 'delete-all-other-buffers
   "fm" 'indent-region
   "pF" 'helm-projectile-find-file-in-known-projects
