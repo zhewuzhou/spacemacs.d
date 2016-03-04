@@ -2,7 +2,8 @@
 (evil-leader/set-key
   ;;; don't use o, because it's the namespace of org
   ;;; making sure always using 2 chars single chars make it less flexable
-  "aa" 'avy-goto-char-2
+  ",c" 'avy-goto-char-2
+  ",w" 'avy-goto-word-or-subword-1
   "aA" 'helm-apropos
   "cw" 'ispell-word
   "dw" 'delete-other-windows
