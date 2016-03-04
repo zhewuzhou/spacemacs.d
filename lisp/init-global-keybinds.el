@@ -4,6 +4,7 @@
   ;;; making sure always using 2 chars single chars make it less flexable
   ",c" 'avy-goto-char-2
   ",w" 'avy-goto-word-or-subword-1
+  ",g" 'google-translate-at-point
   "aA" 'helm-apropos
   "cw" 'ispell-word
   "dw" 'delete-other-windows
