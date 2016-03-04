@@ -14,7 +14,8 @@
             (evil-insert-state)))
 
 (spacemacs/set-leader-keys-for-major-mode 'org-mode
-  "A" 'my/org-archive-done-tasks)
+  "A"   'my/org-archive-done-tasks
+  "SPC" 'org-insert-heading)
 
 (add-hook 'org-mode-hook
           (lambda ()
