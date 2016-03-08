@@ -54,7 +54,9 @@ values."
      c-c++
      swift
      scala
-     python
+     (python :variables
+             python-test-runner 'pytest
+             python-enable-yapf-format-on-save t)
      ruby
      go
      erlang
@@ -298,6 +300,7 @@ layers configuration. You are free to put any user code."
   (setq markdown-command "~/.rvm/gems/ruby-2.2.2/bin/kramdown")
   (setq google-translate-default-source-language "en")
   (setq google-translate-default-target-language "zh-CN")
+  (setq python-fill-column 99)
 
   (global-evil-matchit-mode 1)
   (global-evil-surround-mode 1)
