@@ -14,11 +14,11 @@
             (evil-insert-state)))
 
 (spacemacs/set-leader-keys-for-major-mode 'org-mode
-  "A"   'my/org-archive-done-tasks
-  "SPC" 'org-insert-heading)
+  "A"   'my/org-archive-done-tasks)
 
 (add-hook 'org-mode-hook
           (lambda ()
+            (define-key org-mode-map (kbd "C-]") 'org-insert-heading)
             (auto-fill-mode)
             (flyspell-mode)))
 
