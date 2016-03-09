@@ -34,11 +34,20 @@
 ;;; from http://emacs.stackexchange.com/questions/14509/kill-process-buffer-without-confirmation
 (setq kill-buffer-query-functions (delq 'process-kill-buffer-query-function kill-buffer-query-functions))
 
+(defun kill-term-window-and-process()
+   (switch-to-buffer (buffer-name (find-term-buffer)))
+   (term-kill-subjob)
+   (kill-buffer (find-term-buffer))
+  )
+
 (defun kill-term ()
   (interactive)
   (if (find-term-buffer)
-      (kill-buffer (find-term-buffer)))
+      (kill-term-window-and-process)
+      )
   )
+
+
 
 (defun current-term ()
   (interactive)
