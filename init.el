@@ -316,6 +316,7 @@ layers configuration. You are free to put any user code."
   (require 'init-global-keybinds)
   (require 'init-project)
   (require 'init-racket)
+  (require 'init-diff)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
