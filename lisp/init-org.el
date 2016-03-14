@@ -54,12 +54,7 @@
                             ("OS" . ?S)
                             ("THEORY" . ?T)
                             (:endgroup)
-                            ("CODING" . ?C)
-                            ("READING" . ?R)
-                            ("BLOG" . ?B)
-                            ("ORG" . ?O)
-                            ("EMACS" . ?E)
-                            ("PROJECT" . ?p))))
+                            ("BLOG" . ?B))))
 
 ;;; Allow setting single tags without the menu
 (setq org-fast-tag-selection-single-key (quote expert))
@@ -68,7 +63,7 @@
 (setq org-agenda-tags-todo-honor-ignore-options t)
 
 ;;; Set up agenda files location
-(setq org-agenda-files (quote ("~/Dropbox/org" "~/my-gtd")))
+(setq org-agenda-files (quote ("~/my-gtd")))
 
 ;;; Set default options for open a org file as conent which not too details as well as not too brief
 (setq org-startup-folded 'content)
