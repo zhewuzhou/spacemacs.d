@@ -10,7 +10,6 @@
 
 
 (spacemacs|add-company-hook racket-mode)
-(add-hook 'racket-mode-hook 'smartparens-mode)
 
 (provide 'init-racket)
 

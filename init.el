@@ -300,6 +300,7 @@ layers configuration. You are free to put any user code."
   (setq markdown-command "~/.rvm/gems/ruby-2.2.2/bin/kramdown")
   (setq google-translate-default-source-language "en")
   (setq google-translate-default-target-language "zh-CN")
+  (setq dotspacemacs-smartparens-strict-mode 1)
   (setq python-fill-column 99)
 
   (global-evil-matchit-mode 1)
