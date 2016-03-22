@@ -2,8 +2,9 @@
 (evil-leader/set-key
   ;;; don't use o, because it's the namespace of org
   ;;; making sure always using 2 chars single chars make it less flexable
-  ",a" 'diff-region-tag-selected-as-a
-  ",b" 'diff-region-compare-with-b
+  ",A" 'diff-region-tag-selected-as-a
+  ",B" 'diff-region-compare-with-b
+  ",b" 'helm-mini
   ",c" 'avy-goto-char-2
   ",w" 'avy-goto-word-or-subword-1
   ",g" 'google-translate-at-point
