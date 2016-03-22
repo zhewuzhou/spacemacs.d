@@ -5,8 +5,8 @@
   ",A" 'diff-region-tag-selected-as-a
   ",B" 'diff-region-compare-with-b
   ",b" 'helm-mini
-  ",c" 'avy-goto-char-2
-  ",w" 'avy-goto-word-or-subword-1
+  ",c" 'avy-goto-word-1
+  ",w" 'avy-goto-char-2
   ",g" 'google-translate-at-point
   ",t" 'google-translate-query-translate-reverse
   "aA" 'helm-apropos
