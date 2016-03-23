@@ -19,6 +19,7 @@
 (add-hook 'org-mode-hook
           (lambda ()
             (define-key org-mode-map (kbd "C-]") 'org-insert-heading)
+            (setq truncate-lines nil)
             (auto-fill-mode)
             (flyspell-mode)))
 
