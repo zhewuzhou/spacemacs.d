@@ -5,7 +5,8 @@
 #lang racket/base
 
 (module+ test
-  (require rackunit)
+  (require rackunit
+           "${1:source}")
   (test-case
-      "${1:case}"
-    (check-eq? 1 1 "example case")))
+      "${2:case}"
+    (check-eq? 1 1 "")))
