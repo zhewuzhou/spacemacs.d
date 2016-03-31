@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: lang
+# key: lang
+# --
+#lang racket/base
+
+(define (${1:name} ${2:args})
+  (${3:body}))
+
+(provide $1)
