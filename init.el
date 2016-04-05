@@ -257,7 +257,7 @@ values."
    dotspacemacs-line-numbers nil
    ;; If non-nil smartparens-strict-mode will be enabled in programming modes.
    ;; (default nil)
-   dotspacemacs-smartparens-strict-mode nil
+   dotspacemacs-smartparens-strict-mode 1
    ;; Select a scope to highlight delimiters. Possible values are `any',
    ;; `current', `all' or `nil'. Default is `all' (highlight any scope and
    ;; emphasis the current one). (default 'all)
@@ -300,7 +300,6 @@ layers configuration. You are free to put any user code."
   (setq markdown-command "~/.rvm/gems/ruby-2.2.2/bin/kramdown")
   (setq google-translate-default-source-language "en")
   (setq google-translate-default-target-language "zh-CN")
-  (setq dotspacemacs-smartparens-strict-mode 1)
   (setq python-fill-column 99)
 
   (global-evil-matchit-mode 1)
