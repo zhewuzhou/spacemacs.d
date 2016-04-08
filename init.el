@@ -55,7 +55,7 @@ values."
      swift
      scala
      (python :variables
-             python-test-runner 'nose
+             python-test-runner 'pytest
              python-enable-yapf-format-on-save t)
      ruby
      go
