@@ -43,7 +43,10 @@ values."
      ;; ----------------------------------------------------------------
      ;;; lang lisp family
      emacs-lisp
-     haskell
+     (haskell :variables
+              haskell-process-type 'stack-ghci
+              haskell-stylish-on-save t
+              haskell-enable-hindent-style "chris-done")
      racket
      clojure
      common-lisp
@@ -307,9 +310,11 @@ layers configuration. You are free to put any user code."
   (global-linum-mode 1)
 
   (add-to-list 'load-path (expand-file-name "lisp" "~/.spacemacs.d/"))
+  (add-to-list 'exec-path "~/.local/bin/")
 
   (add-hook 'ess-mode-hook (lambda ()
                              (ess-toggle-underscore nil)))
+  (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 
   (require 'init-linum)
   (require 'init-org)
