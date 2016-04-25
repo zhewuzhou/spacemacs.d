@@ -297,32 +297,35 @@ in `dotspacemacs/user-config'."
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
   (setq pyim-directory "~/.spacemacs.d/pyim/")
-  (setq pyim-dicts '((:name "default" :file "~/.spacemacs.d/pyim/dicts/pyim-bigdict.pyim" :coding utf-8-unix :dict-type pinyin-dict)))
+  (setq chinese-enable-youdao-dict t)
+  (setq pyim-property-file "~/.spacemacs.d/pyim/pyim-words-property.txt")
+  (setq pyim-dicts '((:name "default" :file "~/.spacemacs.d/pyim/dicts/pyim-bigdict.pyim"
+                            :coding utf-8-unix
+                            :dict-type pinyin-dict)))
   (setq eclim-eclipse-dirs "~/Applications/Eclipse.app/Contents/Eclipse"
         eclim-executable "~/Applications/Eclipse.app/Contents/Eclipse/eclim")
   (setq markdown-command "~/.rvm/gems/ruby-2.2.2/bin/kramdown")
-  (setq google-translate-default-source-language "en")
-  (setq google-translate-default-target-language "zh-CN")
+  (setq google-translate-default-source-language
+        "en")
+  (setq google-translate-default-target-language
+        "zh-CN")
   (setq python-fill-column 99)
-
   (global-evil-matchit-mode 1)
   (global-evil-surround-mode 1)
   (global-linum-mode 1)
-
-  (add-to-list 'load-path (expand-file-name "lisp" "~/.spacemacs.d/"))
+  (add-to-list 'load-path
+               (expand-file-name "lisp" "~/.spacemacs.d/"))
   (add-to-list 'exec-path "~/.local/bin/")
-
-  (add-hook 'ess-mode-hook (lambda ()
-                             (ess-toggle-underscore nil)))
+  (add-hook 'ess-mode-hook
+            (lambda ()
+              (ess-toggle-underscore nil)))
   (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
-
   (require 'init-linum)
   (require 'init-org)
   (require 'init-global-keybinds)
   (require 'init-project)
   (require 'init-racket)
-  (require 'init-diff)
-  )
+  (require 'init-diff))
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
