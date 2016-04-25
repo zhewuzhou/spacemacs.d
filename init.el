@@ -46,7 +46,7 @@ values."
      (haskell :variables
               haskell-process-type 'stack-ghci
               haskell-stylish-on-save t
-              haskell-enable-hindent-style "chris-done")
+              haskell-enable-hindent-style "johan-tibell")
      racket
      clojure
      common-lisp
