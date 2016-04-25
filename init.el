@@ -320,6 +320,8 @@ layers configuration. You are free to put any user code."
             (lambda ()
               (ess-toggle-underscore nil)))
   (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+  (spacemacs/set-leader-keys-for-major-mode 'haskell-mode
+    "F" 'hindent-reformat-region)
   (require 'init-linum)
   (require 'init-org)
   (require 'init-global-keybinds)
