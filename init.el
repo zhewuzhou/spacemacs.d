@@ -52,11 +52,8 @@ values."
      common-lisp
      ;; ----------------------------------------------------------------
      ;;; main langs
-     java
-     csharp
      c-c++
      swift
-     scala
      (python :variables
              python-test-runner 'pytest
              python-enable-yapf-format-on-save t)
