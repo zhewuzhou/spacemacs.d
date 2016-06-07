@@ -23,7 +23,6 @@ values."
      osx
      shell
      git
-     chinese
      gtags
      semantic
      restclient
