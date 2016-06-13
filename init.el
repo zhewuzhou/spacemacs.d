@@ -56,6 +56,7 @@ values."
      (python :variables
              python-test-runner 'pytest
              python-enable-yapf-format-on-save t)
+     scala
      ruby
      go
      erlang
