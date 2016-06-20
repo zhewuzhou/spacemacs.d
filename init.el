@@ -22,7 +22,6 @@ values."
      ;; common tools
      osx
      shell
-     git
      gtags
      semantic
      restclient
