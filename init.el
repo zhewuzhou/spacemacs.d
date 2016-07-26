@@ -23,6 +23,7 @@ values."
      osx
      shell
      gtags
+     git
      semantic
      restclient
      search-engine
