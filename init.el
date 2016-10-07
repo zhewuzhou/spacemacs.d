@@ -55,6 +55,7 @@ values."
          erlang
          react
          javascript
+         typescript
          shell-scripts
          windows-scripts
          sql
@@ -361,13 +362,14 @@ layers configuration. You are free to put any user code."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (tide typescript-mode which-key web-mode toc-org swift-mode spaceline slime sass-mode ruby-test-mode robe ranger racket-mode pip-requirements persp-mode paradox org-plus-contrib neotree move-text macrostep less-css-mode js2-refactor helm-projectile helm-ag ggtags fish-mode evil-unimpaired evil-mc eshell-prompt-extras erlang ensime sbt-mode company-tern cmake-mode clj-refactor clang-format cider clojure-mode auto-yasnippet ansible-doc ace-window ace-link ess julia-mode iedit smartparens undo-tree helm helm-core haskell-mode flycheck markdown-mode projectile magit git-commit with-editor f js2-mode s hcl-mode yapfify xterm-color ws-butler window-numbering web-beautify volatile-highlights vi-tilde-fringe uuidgen use-package terraform-mode tern tagedit stickyfunc-enhance srefactor sql-indent spinner spacemacs-theme smeargle slim-mode shell-pop scss-mode scala-mode salt-mode rvm ruby-tools rubocop rspec-mode reveal-in-osx-finder restclient restart-emacs rbenv rake rainbow-delimiters queue quelpa pyvenv pytest pyenv-mode py-isort puppet-mode powershell powerline popwin pcre2el pbcopy paredit ox-gfm osx-trash osx-dictionary orgit org-projectile org-present org-pomodoro org-download org-bullets open-junk-file ob-http noflet mwim multiple-cursors multi-term markdown-toc magit-gitflow lorem-ipsum livid-mode live-py-mode link-hint launchctl json-mode js-doc jinja2-mode jade-mode intero info+ inflections indent-guide ido-vertical-mode ibuffer-projectile hydra hy-mode hungry-delete htmlize hlint-refactor hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation help-fns+ helm-themes helm-swoop helm-pydoc helm-mode-manager helm-make helm-hoogle helm-gtags helm-gitignore helm-flx helm-descbinds helm-css-scss helm-company helm-c-yasnippet haskell-snippets haml-mode google-translate golden-ratio go-eldoc gnuplot gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md flyspell-correct-helm flycheck-pos-tip flycheck-haskell flx-ido fill-column-indicator fancy-battery faceup eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu ess-smart-equals ess-R-object-popup ess-R-data-view eshell-z esh-help engine-mode emmet-mode elisp-slime-nav edn dumb-jump disaster dash-functional cython-mode company-web company-statistics company-shell company-quickhelp company-go company-ghci company-ghc company-cabal company-c-headers company-anaconda common-lisp-snippets column-enforce-mode color-theme-sanityinc-solarized coffee-mode cmm-mode clojure-snippets clean-aindent-mode cider-eval-sexp-fu chruby bundler auto-highlight-symbol auto-dictionary auto-compile ansible aggressive-indent adaptive-wrap ace-jump-helm-line ac-ispell)))
  '(safe-local-variable-values (quote ((no-byte-compile t)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(company-tooltip-common ((t (:inherit company-tooltip :weight bold
-                                        :underline nil))))
- '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold
-                                                  :underline nil)))))
+ '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
+ '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
