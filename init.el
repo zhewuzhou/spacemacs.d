@@ -53,7 +53,6 @@ values."
          ruby
          go
          erlang
-         typescript
          react
          javascript
          shell-scripts
