@@ -30,8 +30,12 @@ values."
          ;; ----------------------------------------------------------------
          ;; common editing support
          (auto-completion :variables auto-completion-enable-snippets-in-popup
-                          t auto-completion-enable-sort-by-usage t auto-completion-enable-help-tooltip
-                          t)
+                          t
+                          auto-completion-enable-sort-by-usage
+                          t
+                          auto-completion-enable-help-tooltip
+                          t
+                          (haskell :variables haskell-completion-backend'intero))
          spell-checking
          syntax-checking
          better-defaults
