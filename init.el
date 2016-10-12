@@ -70,7 +70,9 @@ values."
               t)
          yaml
          markdown
+         ;;; #+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
          (org :variables org-enable-github-support
+              t org :variables org-enable-reveal-js-support
               t)
          ;; ----------------------------------------------------------------
      ;;; config langs
