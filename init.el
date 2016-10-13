@@ -70,11 +70,7 @@ values."
               t)
          yaml
          markdown
-         ;;; #+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
-         (org :variables org-enable-github-support
-              t org :variables org-enable-reveal-js-support
-              t)
-         ;; ----------------------------------------------------------------
+         org
      ;;; config langs
          ansible
          dockerfile
@@ -342,7 +338,7 @@ layers configuration. You are free to put any user code."
                             :dict-type pinyin-dict)))
   (setq eclim-eclipse-dirs "~/Applications/Eclipse.app/Contents/Eclipse"
         eclim-executable "~/Applications/Eclipse.app/Contents/Eclipse/eclim")
-  (setq markdown-command "~/.rvm/gems/ruby-2.2.2/bin/kramdown")
+  (setq markdown-command "/usr/local/bin/kramdown")
   (setq google-translate-default-source-language
         "en")
   (setq google-translate-default-target-language
