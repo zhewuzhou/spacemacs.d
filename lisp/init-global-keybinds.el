@@ -9,7 +9,7 @@
   "aA" 'helm-apropos "cw" 'ispell-word "wD"
   'delete-other-windows "db" 'delete-all-other-buffers
   "fm" 'indent-region "pF" 'helm-projectile-find-file-in-known-projects
-  "ps" 'spacemacs/helm-project-smart-do-search
+  "fM" 'srefactor-lisp-format-buffer "ps" 'spacemacs/helm-project-smart-do-search
   "nt" 'neotree-toggle
 ;;; o is for org mode "ds" 'delete-trailing-whitespace
   "Z" 'current-term)
