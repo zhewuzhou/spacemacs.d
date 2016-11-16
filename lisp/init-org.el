@@ -13,8 +13,9 @@
           (lambda ()
             (evil-insert-state)))
 
-(spacemacs/set-leader-keys-for-major-mode 'org-mode
-  "A"   'my/org-archive-done-tasks)
+(spacemacs/set-leader-keys-for-major-mode
+  'org-mode "A" 'my/org-archive-done-tasks "C"
+  'org-todo)
 
 (add-hook 'org-mode-hook
           (lambda ()
