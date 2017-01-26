@@ -346,6 +346,7 @@ layers configuration. You are free to put any user code."
   (require 'init-project)
   (require 'init-haskell)
   (require 'init-racket)
+  (require 'init-web)
   (require 'init-diff))
 
 ;; Do not write anything past this comment. This is where Emacs will
