@@ -17,7 +17,7 @@
   (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
 
 (spacemacs/set-leader-keys-for-major-mode
-  'react-mode "F" 'find-alternate-file)
+  'react-mode "f" 'find-alternate-file)
 
 (provide 'init-web)
 ;;; init-org.el ends here
