@@ -316,6 +316,10 @@ values."
 
 (defun dotspacemacs/user-init ()
   (setq srecode-map-save-file "~/.spacemacs.d/srecode-map.el")
+  (setq configuration-layer--elpa-archives '(("melpa-cn" . "https://elpa.zilongshanren.com/melpa/")
+                                             ("melpa-stable-cn" . "https://elpa.zilongshanren.com/melpa-stable/")
+                                             ("org-cn" . "https://elpa.zilongshanren.com/org/")
+                                             ("gnu-cn" . "https://elpa.zilongshanren.com/gnu/")))
   "Initialization function for user code.
   It is called immediately after `dotspacemacs/init'.  You are free to put almost
   any user code here.  The exception is org related code, which should be placed
