@@ -74,5 +74,8 @@
 ;;; Set default options for open a org file as conent which not too details as well as not too brief
 (setq org-startup-folded 'content)
 
+;;; turn off linum mode for org mode
+(add-hook 'org-mode-hook (lambda () (spacemacs/toggle-line-numbers-off)) 'append)
+
 (provide 'init-org)
 ;;; init-org.el ends here
