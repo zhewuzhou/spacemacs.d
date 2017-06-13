@@ -203,7 +203,7 @@ values."
    ;; file stored in the cache directory and `nil' to disable auto-saving.
    ;; (default 'cache)
    dotspacemacs-auto-save-file-location
-   'cache
+   'original
    ;; Maximum number of rollback slots to keep in the cache. (default 5)
    dotspacemacs-max-rollback-slots
    5
@@ -329,6 +329,7 @@ layers configuration. You are free to put any user code."
   (setq google-translate-default-target-language
         "zh-CN")
   (setq python-fill-column 99)
+  (setq auto-save-timeout 5)
   (setq create-lockfiles nil)
   (global-evil-matchit-mode 1)
   (global-evil-surround-mode 1)
