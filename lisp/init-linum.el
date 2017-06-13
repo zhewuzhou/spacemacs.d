@@ -35,7 +35,8 @@
 (add-hook 'linum-before-numbering-hook 'my-linum-get-format-string)
 
 (when (require 'init-linum-off)
-  (add-hook 'after-change-major-mode-hook 'linum-on))
+  (add-hook 'after-change-major-mode-hook 'linum-on)
+  (add-hook 'org-mode-hook 'linum-on))
 
 (provide 'init-linum)
 ;;; init-linum.el ends here

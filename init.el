@@ -332,7 +332,6 @@ layers configuration. You are free to put any user code."
   (setq create-lockfiles nil)
   (global-evil-matchit-mode 1)
   (global-evil-surround-mode 1)
-  (global-linum-mode 1)
   (add-to-list 'load-path
                (expand-file-name "lisp" "~/.spacemacs.d/"))
   (add-to-list 'exec-path "~/.local/bin/")

@@ -15,7 +15,8 @@
 
 (defun linum-on ()
   "* When linum is running globally, disable line number in modes defined in `linum-disabled-modes-list'. Changed by linum-off. Also turns off numbering in starred modes like *scratch*"
-
+  (global-linum-mode 0)
+  (linum-mode 0)
   (unless (or (minibufferp)
               (member major-mode linum-disabled-modes-list)
               (string-match "*" (buffer-name))
