@@ -21,7 +21,7 @@ values."
      osx shell
          gtags
          git
-         semantic
+         ; semantic
          restclient
          search-engine
          (ibuffer :variables ibuffer-group-buffers-by'projects)
