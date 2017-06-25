@@ -46,23 +46,23 @@ values."
          (haskell :variables haskell-process-type'stack-ghci
                   haskell-enable-hindent-style "johan-tibell")
          racket
-         clojure
-         common-lisp
+         ;; clojure
+         ;; common-lisp
          ;; ----------------------------------------------------------------
      ;;; main langs
-         c-c++
-         swift
+         ;; c-c++
+         ;; swift
          (python :variables python-test-runner'pytest
                  python-enable-yapf-format-on-save t)
          scala
-         ruby
+         ;; ruby
          go
-         erlang
+         ;; erlang
          react
          javascript
          typescript
          shell-scripts
-         windows-scripts
+         ;; windows-scripts
          sql
          html
          ;; ----------------------------------------------------------------
