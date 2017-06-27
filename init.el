@@ -20,7 +20,7 @@ values."
      ;; common tools
      osx shell
          gtags
-         git
+         ; git
          ; semantic
          ; restclient
          ; search-engine
