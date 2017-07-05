@@ -17,11 +17,13 @@
   'org-mode "A" 'my/org-archive-done-tasks "C"
   'org-todo)
 
+;;; org mode hooks
 (add-hook 'org-mode-hook
           (lambda ()
             (define-key org-mode-map (kbd "C-]") 'org-insert-heading)
             (setq truncate-lines nil)
             (auto-fill-mode)
+            (spacemacs/toggle-auto-completion-on)
             (flyspell-mode)))
 
 ;;; states and faces
