@@ -331,6 +331,7 @@ layers configuration. You are free to put any user code."
   (setq python-fill-column 99)
   (setq auto-save-timeout 5)
   (setq create-lockfiles nil)
+  (global-company-mode 1)
   (global-evil-matchit-mode 1)
   (global-evil-surround-mode 1)
   (add-to-list 'load-path
