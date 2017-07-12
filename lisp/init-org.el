@@ -1,8 +1,6 @@
 ;;; init-org.el org plus evil
 
 (add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\|txt\\)$" . org-mode))
-(require 'init-org-agenda)
-(require 'init-org-capture)
 
 (defun my/org-archive-done-tasks ()
   (interactive)
