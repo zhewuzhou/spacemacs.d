@@ -77,7 +77,7 @@ values."
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages
-   '()
+   '(fcitx)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages
    '(linum-relative)
@@ -353,6 +353,10 @@ layers configuration. You are free to put any user code."
   (require 'init-racket)
   (require 'init-web)
   (require 'init-diff))
+  ;; Make sure the following comes before `(fcitx-aggressive-setup)'
+  ;(setq fcitx-active-evil-states '(insert emacs vim)) ; if you use hybrid mode
+  ;(fcitx-aggressive-setup)
+  ;(fcitx-prefix-keys-add "M-m") ; M-m is common in Spacemacs
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
