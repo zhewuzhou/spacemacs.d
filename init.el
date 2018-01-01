@@ -77,7 +77,7 @@ values."
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages
-   '()
+   '(fcitx)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages
    '(linum-relative)
@@ -344,6 +344,11 @@ layers configuration. You are free to put any user code."
   (add-hook 'ess-mode-hook
             (lambda ()
               (ess-toggle-underscore nil)))
+  ;; fcitx setup
+  (setq fcitx-active-evil-states '(insert emacs vim))
+  (fcitx-aggressive-setup)
+  (fcitx-prefix-keys-add "M-m")
+
   (require 'init-linum)
   (with-eval-after-load 'org
     (require 'init-org))
