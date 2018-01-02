@@ -344,6 +344,11 @@ layers configuration. You are free to put any user code."
   (add-hook 'ess-mode-hook
             (lambda ()
               (ess-toggle-underscore nil)))
+  ;; fcitx setup
+  (setq fcitx-active-evil-states '(insert emacs vim))
+  (fcitx-aggressive-setup)
+  (fcitx-prefix-keys-add "M-m")
+
   (require 'init-linum)
   (with-eval-after-load 'org
     (require 'init-org))
