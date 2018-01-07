@@ -51,8 +51,9 @@ values."
      ;;; main langs
          ;; c-c++
          ;; swift
-         (python :variables python-test-runner'pytest
-                 python-enable-yapf-format-on-save t)
+         (python :variables python-test-runner 'pytest
+                 python-enable-yapf-format-on-save t
+                 python-sort-imports-on-save t)
          scala
          ;; ruby
          go
