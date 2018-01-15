@@ -67,8 +67,6 @@ values."
          html
          ;; ----------------------------------------------------------------
      ;;; misc langs
-         (ess :variables ess-enable-smart-equals
-              t)
          yaml
          markdown
          (org :variables org-enable-github-support t)
