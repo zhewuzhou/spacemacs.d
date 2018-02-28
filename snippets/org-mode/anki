@@ -1,0 +1,8 @@
+* ${1:deck}                                      :deck:
+** Item                                          :note:
+   :PROPERTIES:
+   :ANKI_NOTE_TYPE: Basic
+   :ANKI_TAGS: ${2:tags}
+   :END:
+*** Front
+*** Back

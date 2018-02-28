@@ -1,0 +1,3 @@
+#+BEGIN_SRC ${1:lang}
+  ${2:code}
+#+END_SRC
