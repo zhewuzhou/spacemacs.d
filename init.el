@@ -55,7 +55,7 @@ values."
                  python-enable-yapf-format-on-save t
                  python-sort-imports-on-save t)
          scala
-         ;; ruby
+         ruby
          go
          ;; erlang
          react
