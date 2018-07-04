@@ -1,8 +1,7 @@
-* Idiom
+* Idiom                                             :${2:tags}:
   :PROPERTIES:
   :ANKI_NOTE_TYPE: Basic
   :ANKI_DECK: ${1:deck}
-  :ANKI_TAGS: ${2:tags}
   :END:
 ** Front
 ** Back
