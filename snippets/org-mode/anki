@@ -1,8 +1,8 @@
-* ${1:deck}                                      :deck:
-** Item                                          :note:
-   :PROPERTIES:
-   :ANKI_NOTE_TYPE: Basic
-   :ANKI_TAGS: ${2:tags}
-   :END:
-*** Front
-*** Back
+* Idiom
+  :PROPERTIES:
+  :ANKI_NOTE_TYPE: Basic
+  :ANKI_DECK: ${1:deck}
+  :ANKI_TAGS: ${2:tags}
+  :END:
+** Front
+** Back
