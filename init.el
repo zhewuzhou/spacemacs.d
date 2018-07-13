@@ -49,7 +49,7 @@ values."
          ;; common-lisp
          ;; ----------------------------------------------------------------
      ;;; main langs
-         ;; c-c++
+         c-c++
          ;; swift
          (python :variables python-test-runner 'pytest
                  python-enable-yapf-format-on-save t
