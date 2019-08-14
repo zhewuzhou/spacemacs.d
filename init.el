@@ -49,22 +49,22 @@ values."
          ;; common-lisp
          ;; ----------------------------------------------------------------
      ;;; main langs
-         c-c++
+         ;; c-c++
          ;; swift
          (python :variables python-test-runner 'pytest
                  python-enable-yapf-format-on-save t
                  python-sort-imports-on-save t)
-         scala
-         ruby
-         go
+         ;; scala
+         ;; ruby
+         ;; go
          ;; erlang
-         react
-         javascript
-         typescript
+         ;; react
+         ;; javascript
+         ;; typescript
          shell-scripts
          ;; windows-scripts
          sql
-         html
+         ;; html
          ;; ----------------------------------------------------------------
      ;;; misc langs
          yaml
@@ -313,10 +313,10 @@ values."
 
 (defun dotspacemacs/user-init ()
   (setq srecode-map-save-file "~/.spacemacs.d/srecode-map.el")
-  (setq configuration-layer--elpa-archives
-        '(("melpa-cn" . "http://elpa.emacs-china.org/melpa/")
-          ("org-cn"   . "http://elpa.emacs-china.org/org/")
-          ("gnu-cn"   . "http://elpa.emacs-china.org/gnu/")))
+  ;; (setq configuration-layer--elpa-archives
+  ;;       '(("melpa-cn" . "http://elpa.emacs-china.org/melpa/")
+  ;;         ("org-cn"   . "http://elpa.emacs-china.org/org/")
+  ;;         ("gnu-cn"   . "http://elpa.emacs-china.org/gnu/")))
   "Initialization function for user code.
   It is called immediately after `dotspacemacs/init'.  You are free to put almost
   any user code here.  The exception is org related code, which should be placed
